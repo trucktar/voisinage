@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/base.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header class="position-fixed d-flex" style="height:48px;left:0;right:0;top:0;z-index:1;">
+    <div class="d-flex align-items-center flex-grow-1 px-3 bg-white border-bottom">
+      <div class="position-relative d-flex flex-grow-1">
+        <a class="d-inline-flex align-items-center text-decoration-none text-dark mr-2 mr-md-3" href=""
+          style="font-size:x-large;">Voisinage</a>
+        <form class="d-none d-sm-flex form-inline flex-grow-1 mx-md-auto" style="max-width:690px;">
+          <input class="form-control form-control-sm mx-2 mx-md-3 shadow-none w-100" type="search" placeholder="Search"
+            style="height:36px;">
+        </form>
+      </div>
+      <div class="d-flex">
+        <a class="btn btn-sm btn-outline-primary" href="#" data-toggle="modal" data-target="#authModal"
+          style="min-width:100px;line-height:26px;">LOG IN</a>
+        <a class="btn btn-sm btn-primary ml-2 ml-md-3" href="#" data-toggle="modal" data-target="#authModal"
+          style="min-width:100px;line-height:26px;">SIGN UP</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Neighbourhood homepage -->
+  <div class="d-flex justify-content-center mx-auto p-3"
+    style="margin-top:48px;min-height:calc(100vh-48px);max-width:1248px;">
+
+    <div class="d-flex flex-column" style="width: 640px;">
+      <!-- InfoNav -->
+      <nav class="nav nav-pills rounded-sm mb-3 py-1 px-3 bg-white text-center">
+        <a class="nav-link flex-grow-1 active" data-toggle="pill" href="#posts" style="flex-basis: 0;">Posts</a>
+        <a class="nav-link flex-grow-1" data-toggle="pill" href="#businesses" style="flex-basis: 0;">Businesses</a>
+        <a class="d-lg-none nav-link flex-grow-1" data-toggle="pill" href="#overview"
+          style="flex-basis: 0;">Overview</a>
+      </nav>
+
+      <div class="tab-content">
+        <!-- Posts -->
+        <div class="tab-pane fade show active" id="posts">
+          <div class="card pt-3 p-3 mb-3" style="font-size: 12px;">
+            <article class="d-flex flex-column">
+              <img class="img-fluid rounded-sm" src="https://picsum.photos/seed/picsum/640/480" alt="">
+              <span class="text-muted mt-3 mb-1">Posted by <a href="">u/doctar</a> 1 day ago</span>
+              <h5 class="mb-2"><a class="text-dark" href="">Papa Shirandula Actor Charles
+                  Bukeko Is Dead</a></h5>
+              <p class="mb-2" style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                repellat nemo ad id exercitationem
+                ipsam corporis vitae voluptate earum? Reprehenderit optio fuga quisquam eligendi, pariatur temporibus
+                magni sunt porro voluptatum natus, laudantium quis! Alias voluptatem voluptatum numquam, corporis quod
+                ipsam soluta veniam voluptates id excepturi vero blanditiis facere autem qui.</p>
+            </article>
+            <div class="d-flex align-items-center font-weight-bold text-muted" style="height: 32px;">
+              <a class="text-decoration-none text-muted p-1 bg-light rounded-sm" href="">8 comments</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Businesses -->
+        <div class="tab-pane container-fluid fade" id="businesses">
+          <div class="row">
+            <div class="col-sm-6 card p-3">
+              <p class="mb-2 font-weight-bold">Business name</p>
+              <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+              <span>0799******</span>
+              <a href="">doctar@docdomain.com</a>
+            </div>
+            <div class="col-sm-6 card p-3">
+              <p class="mb-2 font-weight-bold">Business name</p>
+              <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+              <span>0799******</span>
+              <a href="">doctar@docdomain.com</a>
+            </div>
+            <div class="col-sm-6 card p-3">
+              <p class="mb-2 font-weight-bold">Business name</p>
+              <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+              <span>0799******</span>
+              <a href="">doctar@docdomain.com</a>
+            </div>
+            <div class="col-sm-6 card p-3">
+              <p class="mb-2 font-weight-bold">Business name</p>
+              <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+              <span>0799******</span>
+              <a href="">doctar@docdomain.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Overview mobile -->
+        <div class="tab-pane container-fluid fade" id="overview">
+          <div class="row">
+            <div class="col-sm-6 card px-0 mb-3 mb-sm-0">
+              <div class="card-header px-3 font-weight-bold">About Neighborhood</div>
+              <div class="card-body p-3">
+                <p class="card-text">A place for all things related to the Rust programming language—an open-source
+                  systems language that emphasizes performance, reliability, and productivity.</p>
+                <div class="d-flex align-items-center">
+                  <span class="flex-grow-1 font-weight-bold">107 Members</span>
+                  <a href="#" class="btn btn-sm btn-primary flex-grow-1">JOIN</a>
+                </div>
+                <hr>
+                <span>Created Dec 2, 2010</span>
+              </div>
+            </div>
+            <div class="col-sm-6 card px-0">
+              <div class="card-header px-3 font-weight-bold">Emergency Services</div>
+              <div class="accordion flex-grow-1" id="servicesAccordion">
+                <div class="card border-0 rounded-0">
+                  <button type="button" class="btn btn-sm text-left font-weight-bold p-3 shadow-none rounded-0"
+                    data-toggle="collapse" data-target="#serviceOne">1. Hospital</button>
+                  <div id="serviceOne" class="px-3 pb-2 collapse show" data-parent="#servicesAccordion">
+                    <div class="d-flex flex-column">
+                      <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                      <span>0799******</span>
+                      <span>0799******</span>
+                      <a href="">doctar@docdomain.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 rounded-0">
+                  <button type="button"
+                    class="btn btn-sm text-left font-weight-bold p-3 shadow-none border-top rounded-0"
+                    data-toggle="collapse" data-target="#serviceTwo">2. Police Station</button>
+                  <div id="serviceTwo" class="px-3 pb-2 collapse" data-parent="#servicesAccordion">
+                    <div class="d-flex flex-column">
+                      <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                      <span>0799******</span>
+                      <span>0799******</span>
+                      <a href="">doctar@docdomain.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 rounded-0">
+                  <button type="button"
+                    class="btn btn-sm text-left font-weight-bold p-3 shadow-none border-top rounded-0"
+                    data-toggle="collapse" data-target="#serviceThree">3. Fire Department</button>
+                  <div id="serviceThree" class="px-3 pb-2 collapse" data-parent="#servicesAccordion">
+                    <div class="d-flex flex-column">
+                      <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                      <span>0799******</span>
+                      <span>0799******</span>
+                      <a href="">doctar@docdomain.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Overview sidebar -->
+    <div class="d-none d-lg-flex flex-column ml-3 ml-xl-4" style="width: 312px;">
+      <div class="card mb-3">
+        <div class="card-header px-3 font-weight-bold">About Neighborhood</div>
+        <div class="card-body p-3">
+          <p class="card-text">A place for all things related to the Rust programming language—an open-source systems
+            language that emphasizes performance, reliability, and productivity.</p>
+          <div class="d-flex align-items-center">
+            <span class="flex-grow-1 font-weight-bold">107 Members</span>
+            <a href="#" class="btn btn-sm btn-primary flex-grow-1">JOIN</a>
+          </div>
+          <hr>
+          <span>Created Dec 2, 2010</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header px-3 font-weight-bold">Emergency Services</div>
+        <div class="accordion flex-grow-1" id="servicesAccordion">
+          <div class="card border-0 rounded-0">
+            <button type="button" class="btn btn-sm text-left font-weight-bold p-3 shadow-none rounded-0"
+              data-toggle="collapse" data-target="#serviceOne">1. Hospital</button>
+            <div id="serviceOne" class="px-3 pb-2 collapse show" data-parent="#servicesAccordion">
+              <div class="d-flex flex-column">
+                <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                <span>0799******</span>
+                <span>0799******</span>
+                <a href="">doctar@docdomain.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0">
+            <button type="button" class="btn btn-sm text-left font-weight-bold p-3 shadow-none border-top rounded-0"
+              data-toggle="collapse" data-target="#serviceTwo">2. Police Station</button>
+            <div id="serviceTwo" class="px-3 pb-2 collapse" data-parent="#servicesAccordion">
+              <div class="d-flex flex-column">
+                <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                <span>0799******</span>
+                <span>0799******</span>
+                <a href="">doctar@docdomain.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 rounded-0">
+            <button type="button" class="btn btn-sm text-left font-weight-bold p-3 shadow-none border-top rounded-0"
+              data-toggle="collapse" data-target="#serviceThree">3. Fire Department</button>
+            <div id="serviceThree" class="px-3 pb-2 collapse" data-parent="#servicesAccordion">
+              <div class="d-flex flex-column">
+                <a class="text-muted" style="font-size: 12px;">doctar.docdomain.com</a>
+                <span>0799******</span>
+                <span>0799******</span>
+                <a href="">doctar@docdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div class="modal fade" id="authModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered mx-auto" style="max-width: 350px;">
+      <div class="modal-content">
+        <div class="tab-content">
+          <div class="modal-body pb-0">
+            <h1 class="mb-4 text-center mt-3">Login</h1>
+            <form class="d-flex flex-column mx-4" action="">
+              <input class="form-control mb-2" type="text" placeholder="Username">
+              <input class="form-control mb-2" type="password" placeholder="Password">
+              <button type="submit" class="btn btn-sm btn-primary btn-block my-2 font-weight-bold">LOG IN</button>
+            </form>
+          </div>
+          <div class="modal-body pb-0 d-none">
+            <h1 class="mb-4 text-center mt-3">Sign up</h1>
+            <form class="d-flex flex-column mx-4" action="">
+              <input class="form-control mb-2" type="email" placeholder="Email">
+              <input class="form-control mb-2" type="text" placeholder="Username">
+              <input class="form-control mb-2" type="password" placeholder="Password">
+              <input class="form-control mb-2" type="password" placeholder="Confirm Password">
+              <button type="submit" class="btn btn-sm btn-primary btn-block my-2 font-weight-bold">SIGN UP</button>
+            </form>
+          </div>
+          <div class="mx-4 my-4 text-center" role="tablist">
+            <p class="px-3">New to Voisinage? <a class="font-weight-bold" href="">Sign up</a></p>
+            <p class="px-3 d-none">Are you a member? <a class="font-weight-bold" href="">Log in</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script>
+    $(() => {
+      let authTabs = $("div[role='tablist'] p");
+      let authForms = $(".modal-body");
+
+      $("div[role='tablist'] a").click((e) => {
+        e.preventDefault();
+        authTabs.toggleClass("d-none", "show");
+        authForms.toggleClass("d-none", "show");
+      });
+    })
+  </script>
+</body>
+
+</html>
